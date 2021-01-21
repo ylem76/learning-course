@@ -12,8 +12,20 @@
 
 <script>
 export default {
-  props: ['resources'],
+  inject: {
+    resources: {
+      type: Array,
+      default: () => [],
+    },
+  },
 }
 </script>
 
-<style></style>
+<style>
+ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  max-width: 40rem;
+}
+</style>

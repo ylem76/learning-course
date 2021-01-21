@@ -1,31 +1,9 @@
 <template>
-  <div class="container">
-    <stored-resources :resources="storedResources"></stored-resources>
+  <div>
+    <the-header title="RememberMe"></the-header>
+    <the-resources></the-resources>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      storedResources: [
-        {
-          id: 'official-guide',
-          title: 'Official Guide',
-          description: 'The official Vue.js documentation',
-          link: 'https://vuejs.org',
-        },
-        {
-          id: 'google',
-          title: 'Google',
-          description: 'Learn to google...',
-          link: 'https://google.com',
-        },
-      ],
-    }
-  },
-}
-</script>
 
 <style>
 .container {
